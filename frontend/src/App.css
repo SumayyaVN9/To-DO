@@ -1,0 +1,151 @@
+/* General Page Layout */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+/* Container */
+.todo-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Header */
+.todo-container h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input Field */
+.input-section input[type="text"] {
+  width: 70%;
+  padding: 10px 15px;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.input-section input[type="text"]:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+}
+
+/* Add Button */
+.input-section button {
+  padding: 10px 25px;
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #1e88e5;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e3f2fd;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Task Rows */
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Status Styling */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* Different status colors */
+.status.todo {
+  background-color: #f57c00;
+}
+
+.status.pending {
+  background-color: #ffb300;
+}
+
+.status.in {
+  background-color: #29b6f6;
+}
+
+.status.done {
+  background-color: #43a047;
+}
+
+/* Buttons for edit/delete */
+td button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+td button:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .todo-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .input-section input[type="text"] {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
