@@ -1,47 +1,47 @@
-/* General Page Layout */
-body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  margin: 0;
-  padding-top: 50px;
-}
+ body { 
+  font-family: "Poppins", sans-serif; 
+  background: #ECFAE5; 
+  /* display: flex;  */
+  justify-content: center; 
+  align-items: flex-start; 
+  /* min-height: 100vh; */
+   margin: 0; 
+   padding-top: 50px;
+   }
+ .todo-container 
+ { 
+  background: #F0F0F0;
+   padding: 30px 40px; 
+   border-radius: 15px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+   width: 80%;
+   text-align: center; 
+   margin-left: 10%;
+    }
+  
 
-/* Container */
-.todo-container {
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-}
 
-/* Header */
 .todo-container h1 {
-  color: #333;
-  font-size: 28px;
+  color: #627956;
+  font-size: 38px;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
-/* Input Section */
 .input-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  margin-top: 20px;
 }
+
 
 /* Input Field */
 .input-section input[type="text"] {
   width: 70%;
   padding: 10px 15px;
-  border: 2px solid #90caf9;
+  border: 2px solid #D9E9CF;
   border-radius: 8px;
   outline: none;
   font-size: 16px;
@@ -49,14 +49,14 @@ body {
 }
 
 .input-section input[type="text"]:focus {
-  border-color: #42a5f5;
-  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+  border-color: #96A78D;
+  box-shadow: 0 0 5px  #B6CEB4;
 }
 
 /* Add Button */
 .input-section button {
   padding: 10px 25px;
-  background-color: #42a5f5;
+  background-color: #808f78;
   color: white;
   border: none;
   border-radius: 8px;
@@ -67,7 +67,7 @@ body {
 }
 
 .input-section button:hover {
-  background-color: #1e88e5;
+  background-color: #627956;
 }
 
 /* Table */
@@ -84,47 +84,64 @@ th, td {
 }
 
 th {
-  background-color: #e3f2fd;
-  color: #333;
+  background-color: #D9E9CF;
+  color: #19191a8b;
   font-weight: 600;
 }
+tbody tr{
+color: #19191a8b;
+}
 
-/* Task Rows */
 tbody tr:hover {
   background-color: #f9f9f9;
 }
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #B6CEB4;
+  background-color: #D9E9CF;
+  font-size: 14px;
+  color: #19191a8b;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease;
+}
 
-/* Status Styling */
-.status {
+.status-dropdown:focus {
+  border-color: #D9E9CF;
+  box-shadow: 0 0 5px  #96A78D;
+
+}
+
+/* .status {
   padding: 5px 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-weight: 600;
   color: white;
   cursor: pointer;
   text-transform: capitalize;
 }
 
-/* Different status colors */
 .status.todo {
-  background-color: #f57c00;
+  background-color: #B87C4C;
 }
 
 .status.pending {
-  background-color: #ffb300;
+  background-color: #B87C4C;
 }
 
 .status.in {
-  background-color: #29b6f6;
+  background-color: #B87C4C;
 }
 
 .status.done {
-  background-color: #43a047;
-}
+  background-color: #B87C4C;
+} */
 
-/* Buttons for edit/delete */
+
 td button {
   border: none;
-  background: none;
+  background-color: #D9E9CF !important;
   cursor: pointer;
   font-size: 18px;
   transition: 0.3s;
