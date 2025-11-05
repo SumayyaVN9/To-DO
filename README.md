@@ -1,4 +1,4 @@
-# 📝 To-Do App (In Progress 🚧)
+# 📝 To-Do App (In Pending  🚧)
 
 This project is currently **under development** and not yet fully completed.
 
@@ -14,4 +14,4 @@ This project is currently **under development** and not yet fully completed.
 
 ---
 
-📌 *Note: This is a work-in-progress project and not a fully finished application yet.*
+📌 *Note: Repository will be updated as development continues.*
